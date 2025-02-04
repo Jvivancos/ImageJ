@@ -26,16 +26,16 @@ id = getImageID();
 
 // To get information on an image's dimensions
 getDimensions(width, height, channels, slices, frames);
-waitForUser("Aquest paquet d'imatge te "+channels+" canals, "+slices+" Slices i "+frames+ " Frames\nAnd is "+width+"x"+height+" píxels de mida\nInspect the code to see how to get these numbers.");
+waitForUser("Aquest paquet d'imatges té "+channels+" canals, "+slices+" Slices i "+frames+ " Frames\ni té "+width+"x"+height+" píxels de mida\nInspeccioneu el codi per veure com s'obtenen aquests nombres.");
 
 
 waitForUser("Obriu l'enregistrador de Macros, i cliqueu OK");
 waitForUser("Moveu els cursors de la part inferior de la imatge, i noteu com no s'enregistra res ");
 
-slice = getNumber("Choose a Slice between "+1+" and "+slices, 3);
+slice = getNumber("Trieu una Slice entre "+1+" i "+slices, 3);
 
 Stack.setSlice(slice);
-waitForUser("We have selected slice number "+slice+" using a macro");
+waitForUser("Heu seleccionat la slice numero "+slice+" emprant la macro");
 
 
 // There are many methods to access different dimensions of the image. 
