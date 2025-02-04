@@ -17,7 +17,7 @@
 // First we clean up Fiji to avoid having strange behavior because or previouly opened images
 run("Close All");
 
-showMessage("First we open the dataset Mitosis (26MB)");
+showMessage("Primer es carrega el paquet Mitosis (26MB)");
 
 run("Mitosis (26MB, 5D stack)");
 
@@ -26,11 +26,11 @@ id = getImageID();
 
 // To get information on an image's dimensions
 getDimensions(width, height, channels, slices, frames);
-waitForUser("This image has "+channels+" Channels, "+slices+" Slices and "+frames+ " Frames\nAnd is "+width+"x"+height+" pixels in size\nInspect the code to see how to get these numbers.");
+waitForUser("Aquest paquet d'imatge te "+channels+" canals, "+slices+" Slices i "+frames+ " Frames\nAnd is "+width+"x"+height+" píxels de mida\nInspect the code to see how to get these numbers.");
 
 
-waitForUser("Please Open the Macro Recorder, then click OK");
-waitForUser("Move the sliders below the image, and note how nothing gets recorded");
+waitForUser("Obriu l'enregistrador de Macros, i cliqueu OK");
+waitForUser("Moveu els cursors de la part inferior de la imatge, i noteu com no s'enregistra res ");
 
 slice = getNumber("Choose a Slice between "+1+" and "+slices, 3);
 
