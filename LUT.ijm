@@ -18,12 +18,12 @@ run("Close All");
 print ("\\Clear");
 
 run("Display LUTs");
-waitForUser("The function 'Display LUTs' open an image with all the LUT installed");
+waitForUser("La funció 'Display LUTs' obre una imatge amb totes les LUT instal·lades");
 selectImage(nImages);
 close();
 
 run("Blobs (25K)");
-waitForUser("Now we open 'Blobs' and we'll go though LUTs to change the display of the Image.");
+waitForUser("Ara el programa obre la imatge 'Blobs' i el sistema ens presentarà una a una les LUTs per canviar la visualització de la imatge.");
 blod_id = getImageID();
 listLUT = getList("LUTs");
 
@@ -40,11 +40,11 @@ while ( showNextLUT ) {
 		
 		// Ask the user if we show the next LUT, with a Dialog Window
 		// Yes or No (and Cancel)
-		showNextLUT = getBoolean("The current LUT is : "+listLUT[i]+".\n Do you want to show the next Lookup Table ? ");
+		showNextLUT = getBoolean("La LUT actual és : "+listLUT[i]+".\n Voleu canviar a la següent LUT? ");
 		// if the user clic on Yes, we increment the index i
 		if ( showNextLUT ) i++;
 		// if the user clic on No, we print the LUT selected
-		else print ("Selected LUT is "+listLUT[i] );
+		else print ("La LUT seleccionada és "+listLUT[i] );
 		
 	} else {
 		// exit
