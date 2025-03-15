@@ -18,12 +18,12 @@ run("Close All");
 print ("\\Clear");
 
 run("Display LUTs");
-waitForUser("La funció 'Display LUTs' obre una imatge amb totes les LUT instal·lades en aquesta versió de ImageJ");
+waitForUser("La funció 'Display LUTs' dins el menú 'Image > Color' mostra totes les LUT disponibles en aquesta versió de ImageJ");
 selectImage(nImages);
 close();
 
 run("Blobs (25K)");
-waitForUser("Ara el amb la imatge 'Blobs' el sistema presentarà una a una les diferents LUTs disponibles, per mostrar comn canvia la visualització de la imatge.");
+waitForUser("Amb la imatge 'Blobs' el sistema presentarà, una a una, les diferents LUTs, per mostrar com canvia la visualització de la imatge.");
 blod_id = getImageID();
 listLUT = getList("LUTs");
 
