@@ -10,6 +10,7 @@
  * https://www.edx.org/course/image-processing-and-analysis-for-life-scientists
  * 
  * 2018 - Romain Guiet, EPFL - SV - BIOP
+ * 2025 - Traducció: JVM 
  * https://biop.epfl.ch
  */
 
