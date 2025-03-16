@@ -16,7 +16,6 @@
 
 
 run("Close All");
-print ("\\Clear");
 
 run("Display LUTs");
 waitForUser("La funció 'Display LUTs' del menú 'Image > Color' mostra totes les Taules de Consulta (LUT) disponibles en aquesta versió de ImageJ");
