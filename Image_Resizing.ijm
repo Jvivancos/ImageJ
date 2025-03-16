@@ -15,7 +15,6 @@
 
 
 run("Close All");
-print ("\\Clear");
 
 //open the blobs image
 run("Blobs (25K)");
