@@ -17,7 +17,7 @@
 // First we clean up Fiji to avoid having strange behavior because or previouly opened images
 run("Close All");
 
-showMessage("Primer es carrega el paquet Mitosis (26MB)");
+showMessage("Es carrega el paquet Mitosis (26MB)");
 
 run("Mitosis (26MB, 5D stack)");
 
