@@ -31,7 +31,7 @@ listLUT = getList("LUTs");
 i = 0;
 showNextLUT = true ;
 while ( showNextLUT ) {
-	// we chekc that the index is ine the range of the array
+	// we check that the index is in the range of the array
 	if (i < lengthOf(listLUT) ) {
 		// we make sure to select the right image
 		selectImage(blod_id);
