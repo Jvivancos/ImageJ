@@ -13,7 +13,7 @@
  */
 
 run("Close All");
-waitForUser("Please open the InSpeck Beads.tif image\nthen press OK");
+run("Blobs (25K)");
 
 //We Zoom in to show the image a bit larger
 run("In [+]");
