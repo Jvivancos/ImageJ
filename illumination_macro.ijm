@@ -7,7 +7,7 @@
 // stack. The macro will now run though each image in the stack creating a new image in your selected output folder  //
 // based on your input settings.
 //-------------------------------------------------------------------------------------------------------------------//
-
+run("Fluorescent Cells");
 macro "Stack Illumination" {
 
 // Check the type of ROI that has been used
