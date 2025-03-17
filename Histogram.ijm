@@ -12,9 +12,11 @@ waitForUser("També es poden visualitzar Histogrames de zones de la imatge, fent
 // Close the current histogram window
 close();
 
-// Generate histogram for the selected region
+// Select the original image window and create an ROI
 selectWindow("blobs.gif");
 makeRectangle(27, 14, 45, 45);
+
+// Generate histogram for the selected region
 run("Histogram");
 waitForUser("Observeu els nous valors de l'Histograma de la regió seleccionada");
 waitForUser("Premeu el botó 'Live' de la finestra 'Histogram of Blobs'");
